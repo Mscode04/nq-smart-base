@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartHealth - Intelligent Healthcare Solutions</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Healthcare Navbar -->
+    <nav class="navbar">
+        <a href="#" class="logo">
+            <img src="Assets/img/smart-care.png" alt="" class="logo-img">
+        </a>
+        
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="app.html">Get App</a>
+            <a href="privacy.html">Privacy</a>
+            <a href="contact.html"  class="active">Contact</a>
+        </div>
+        
+        <div class="toggle-btn">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+    
+
+
+<!-- Customer Care Section -->
+<section class="customer-care-section" id="contact">
+    <div class="container">
+        <div class="section-header">
+            <h2>Customer <span>Support</span></h2>
+            <p>Our team is ready to assist you with any questions or concerns</p>
+        </div>
+
+        <div class="care-container">
+            <div class="care-image">
+                <img src="https://images.unsplash.com/photo-1579389083078-4e7018379f7e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" 
+                     alt="Friendly customer support representative">
+            </div>
+            <div class="care-details">
+                <h3>How Can We Help You?</h3>
+                <p class="care-description">Contact our dedicated support team through any of these methods:</p>
+                
+                <div class="contact-options">
+                    <div class="contact-method">
+                        <div class="method-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="method-info">
+                            <h4>Phone Support</h4>
+                            <a href="tel:+11234567890">+1 (123) 456-7890</a>
+                            <p class="availability">Available 24/7 for urgent matters</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-method">
+                        <div class="method-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="method-info">
+                            <h4>Email Support</h4>
+                            <a href="mailto:support@neucare.com">support@neucare.com</a>
+                            <p class="availability">Typically responds within 1 business day</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-method">
+                        <div class="method-icon">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <div class="method-info">
+                            <h4>Live Chat</h4>
+                            <a href="#">Start Live Chat</a>
+                            <p class="availability">Mon-Fri: 8AM-8PM EST</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="emergency-notice">
+                    <i class="fas fa-exclamation-triangle"></i>
+                    <p>For medical emergencies, please call 911 or visit your nearest emergency room.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    
+</style>
+    
+
+<!-- Footer Section -->
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <h3>NeuCare</h3>
+                <p>Transforming healthcare through innovative technology solutions.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#success-stories">Success Stories</a></li>
+                    <li><a href="applist.html">Your App</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Our Team</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> 123 Health Street, MedCity, IN 560001</li>
+                    <li><i class="fas fa-phone-alt"></i> +91 98765 43210</li>
+                    <li><i class="fas fa-envelope"></i> support@neucare.com</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="copyright">
+                &copy; 2023 NeuCare. All rights reserved.
+            </div>
+            <div class="legal-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Cookie Policy</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+    <script>
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            navbar.classList.toggle('scrolled', window.scrollY > 50);
+        });
+        
+        // Mobile menu toggle
+        const toggleBtn = document.querySelector('.toggle-btn');
+        const navLinks = document.querySelector('.nav-links');
+        
+        toggleBtn.addEventListener('click', function() {
+            navLinks.classList.toggle('active');
+        });
+        
+        // Close mobile menu when clicking a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', function() {
+                navLinks.classList.remove('active');
+            });
+        });
+        
+        // Animation for hero elements
+        document.addEventListener('DOMContentLoaded', function() {
+            const heroContent = document.querySelector('.hero-content');
+            const heroImage = document.querySelector('.hero-image');
+            
+            setTimeout(() => {
+                heroContent.style.opacity = '1';
+                heroContent.style.transform = 'translateY(0)';
+            }, 300);
+            
+            setTimeout(() => {
+                heroImage.style.opacity = '1';
+                heroImage.style.transform = 'translateY(0)';
+            }, 600);
+        });
+    </script>
+</body>
+</html>

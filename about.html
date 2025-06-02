@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartHealth - Intelligent Healthcare Solutions</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="about.css">
+</head>
+<body>
+    <!-- Healthcare Navbar -->
+    <nav class="navbar">
+        <a href="#" class="logo">
+            <img src="Assets/img/smart-care.png" alt="" class="logo-img">
+        </a>
+        
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html" class="active">About</a>
+            <a href="app.html">Get App</a>
+            <a href="privacy.html">Privacy</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        
+        <div class="toggle-btn">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+    
+<!-- About App Section -->
+<section class="about-app" id="about-app">
+    <div class="container">
+        <div class="section-header">
+            <h2>About <span>NeuCare</span></h2>
+            <p>Discover how NeuCare revolutionizes healthcare management with cutting-edge technology</p>
+        </div>
+
+        <div class="about-content">
+            <div class="about-text">
+                <h3>Your Complete Healthcare Solution</h3>
+                <p>NeuCare is a comprehensive healthcare management platform designed to streamline medical operations, enhance patient care, and improve clinical outcomes. Our solution integrates seamlessly with existing healthcare systems to provide a unified experience.</p>
+                
+                <div class="features-list">
+                    <div class="feature-item">
+                        <i class="fas fa-shield-alt"></i>
+                        <div>
+                            <h4>Secure & HIPAA Compliant</h4>
+                            <p>Enterprise-grade security with end-to-end encryption and HIPAA compliance to protect sensitive health data.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-sync-alt"></i>
+                        <div>
+                            <h4>Real-time Synchronization</h4>
+                            <p>Instant updates across all devices with cloud-based synchronization for up-to-date patient information.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-cogs"></i>
+                        <div>
+                            <h4>Customizable Workflows</h4>
+                            <p>Tailor the platform to your specific clinical workflows and organizational requirements.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="cta-buttons">
+                    <a href="#" class="btn btn-primary">
+                        <i class="fas fa-download"></i> Download Now
+                    </a>
+                    <a href="#" class="btn btn-outline">
+                        <i class="fas fa-play-circle"></i> Watch Demo
+                    </a>
+                </div>
+            </div>
+            
+            <div class="screenshots">
+                <div class="screenshot-container">
+                    <div class="screenshot-main">
+                        <img src="https://via.placeholder.com/300x600/00a8e8/ffffff?text=Dashboard" alt="NeuCare Dashboard" loading="lazy" class="active">
+                    </div>
+                    <div class="screenshot-thumbnails">
+                        <div class="thumbnail active" data-src="https://via.placeholder.com/300x600/00a8e8/ffffff?text=Dashboard">
+                            <img src="https://via.placeholder.com/80x160/00a8e8/ffffff?text=D" alt="Dashboard Thumbnail" loading="lazy">
+                        </div>
+                        <div class="thumbnail" data-src="https://via.placeholder.com/300x600/0077b6/ffffff?text=Patient+View">
+                            <img src="https://via.placeholder.com/80x160/0077b6/ffffff?text=P" alt="Patient View Thumbnail" loading="lazy">
+                        </div>
+                        <div class="thumbnail" data-src="https://via.placeholder.com/300x600/009688/ffffff?text=Appointments">
+                            <img src="https://via.placeholder.com/80x160/009688/ffffff?text=A" alt="Appointments Thumbnail" loading="lazy">
+                        </div>
+                        <div class="thumbnail" data-src="https://via.placeholder.com/300x600/8e44ad/ffffff?text=Telemedicine">
+                            <img src="https://via.placeholder.com/80x160/8e44ad/ffffff?text=T" alt="Telemedicine Thumbnail" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="tech-specs">
+            <h3>Technical Specifications</h3>
+            <div class="specs-grid">
+                <div class="spec-item">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h4>Platform Compatibility</h4>
+                    <ul>
+                        <li>iOS 12+ (iPhone/iPad)</li>
+                        <li>Android 8.0+</li>
+                        <li>Web Browser</li>
+                    </ul>
+                </div>
+                <div class="spec-item">
+                    <i class="fas fa-database"></i>
+                    <h4>System Requirements</h4>
+                    <ul>
+                        <li>2GB RAM minimum</li>
+                        <li>100MB storage space</li>
+                        <li>Internet connection</li>
+                    </ul>
+                </div>
+                <div class="spec-item">
+                    <i class="fas fa-language"></i>
+                    <h4>Language Support</h4>
+                    <ul>
+                        <li>English</li>
+                        <li>Spanish</li>
+                        <li>French</li>
+                        <li>German</li>
+                    </ul>
+                </div>
+                <div class="spec-item">
+                    <i class="fas fa-plug"></i>
+                    <h4>Integrations</h4>
+                    <ul>
+                        <li>EPIC</li>
+                        <li>Cerner</li>
+                        <li>HL7</li>
+                        <li>FHIR</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    // Screenshot gallery functionality
+    document.addEventListener('DOMContentLoaded', function() {
+        const thumbnails = document.querySelectorAll('.thumbnail');
+        const mainImage = document.querySelector('.screenshot-main img');
+        
+        if (thumbnails && mainImage) {
+            thumbnails.forEach(thumb => {
+                thumb.addEventListener('click', function() {
+                    // Remove active class from all thumbnails
+                    thumbnails.forEach(t => t.classList.remove('active'));
+                    
+                    // Add active class to clicked thumbnail
+                    this.classList.add('active');
+                    
+                    // Change main image
+                    const newSrc = this.getAttribute('data-src');
+                    mainImage.style.opacity = '0';
+                    
+                    setTimeout(() => {
+                        mainImage.src = newSrc;
+                        mainImage.style.opacity = '1';
+                    }, 300);
+                });
+            });
+        }
+        
+        // Animation for features
+        const featureItems = document.querySelectorAll('.feature-item');
+        if (featureItems.length > 0) {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry, index) => {
+                    if (entry.isIntersecting) {
+                        setTimeout(() => {
+                            entry.target.style.opacity = '1';
+                            entry.target.style.transform = 'translateX(0)';
+                        }, index * 100);
+                    }
+                });
+            }, { threshold: 0.1 });
+            
+            featureItems.forEach((item, index) => {
+                item.style.opacity = '0';
+                item.style.transform = index % 2 === 0 ? 'translateX(-20px)' : 'translateX(20px)';
+                item.style.transition = 'all 0.5s ease';
+                observer.observe(item);
+            });
+        }
+    });
+</script>
+
+<!-- Footer Section -->
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <h3>NeuCare</h3>
+                <p>Transforming healthcare through innovative technology solutions.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#success-stories">Success Stories</a></li>
+                    <li><a href="applist.html">Your App</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Our Team</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> 123 Health Street, MedCity, IN 560001</li>
+                    <li><i class="fas fa-phone-alt"></i> +91 98765 43210</li>
+                    <li><i class="fas fa-envelope"></i> support@neucare.com</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="copyright">
+                &copy; 2023 NeuCare. All rights reserved.
+            </div>
+            <div class="legal-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Cookie Policy</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+    <script>
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            navbar.classList.toggle('scrolled', window.scrollY > 50);
+        });
+        
+        // Mobile menu toggle
+        const toggleBtn = document.querySelector('.toggle-btn');
+        const navLinks = document.querySelector('.nav-links');
+        
+        toggleBtn.addEventListener('click', function() {
+            navLinks.classList.toggle('active');
+        });
+        
+        // Close mobile menu when clicking a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', function() {
+                navLinks.classList.remove('active');
+            });
+        });
+        
+        // Animation for hero elements
+        document.addEventListener('DOMContentLoaded', function() {
+            const heroContent = document.querySelector('.hero-content');
+            const heroImage = document.querySelector('.hero-image');
+            
+            setTimeout(() => {
+                heroContent.style.opacity = '1';
+                heroContent.style.transform = 'translateY(0)';
+            }, 300);
+            
+            setTimeout(() => {
+                heroImage.style.opacity = '1';
+                heroImage.style.transform = 'translateY(0)';
+            }, 600);
+        });
+    </script>
+</body>
+</html>

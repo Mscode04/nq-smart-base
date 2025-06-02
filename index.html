@@ -3,9 +3,746 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>SmartHealth - Intelligent Healthcare Solutions</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Ptv website soon</h1>
+    <!-- Healthcare Navbar -->
+    <nav class="navbar">
+        <a href="#" class="logo">
+            <img src="Assets/img/smart-care.png" alt="" class="logo-img">
+        </a>
+        
+        <div class="nav-links">
+            <a href="index.html" class="active">Home</a>
+            <a href="about.html">About</a>
+            <a href="app.html">Get App</a>
+            <a href="privacy.html">Privacy</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        
+        <div class="toggle-btn">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1><span>Neuraq </span>Smart Care: The <span>Future</span> of Care in Your Hand</h1>
+            <p>Say goodbye to paperwork. Embrace real-time, efficient, and compassionate care.
+Our smart solution streamlines workflows, giving healthcare professionals more time to focus on what matters most—caring for people.</p>
+            
+            <div class="cta-buttons">
+                <a href="app.html" class="btn btn-primary">
+                    <i class="fas fa-download" style="margin-right: 8px;"></i> Get The App
+                </a>
+                <a href="about.html" class="btn btn-secondary">Learn More</a>
+            </div>
+            
+            <div class="app-stats">
+                <div class="stat-item">
+                    <i class="fas fa-user-md"></i>
+                    <div class="stat-text">
+                        <h3>500+</h3>
+                        <p>Active Users</p>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-heart"></i>
+                    <div class="stat-text">
+                        <h3>3000+</h3>
+                        <p>Reports</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="hero-image">
+            <div class="mockup-shadow"></div>
+            <div class="phone-mockup">
+                <div class="phone-screen">
+                    <div class="screen-content">
+                        <div class="app-header">
+                            <div class="app-time">9:41 AM</div>
+                            <div class="app-icons">
+                                <i class="fas fa-signal"></i>
+                                <i class="fas fa-wifi"></i>
+                                <i class="fas fa-battery-three-quarters"></i>
+                            </div>
+                        </div>
+                        
+                        <div class="health-data">
+                            <div class="health-metric">
+                                <div class="metric-title">DOCTERS</div>
+                                <div><span class="metric-value">72</span> <span class="metric-unit">Active</span></div>
+                            </div>
+                            <div class="health-metric">
+                                <div class="metric-title">HOME CARE</div>
+                                <div><span class="metric-value">28</span> <span class="metric-unit">/ Month</span></div>
+                            </div>
+                            <div class="health-metric">
+                                <div class="metric-title">REPORTS</div>
+                                <div><span class="metric-value">5,842 +</span> <span class="metric-unit"></span></div>
+                            </div>
+                        </div>
+                        
+                        <div class="app-footer">
+                            <div class="app-tab">
+                                <i class="fas fa-home"></i>
+                                <span>Home</span>
+                            </div>
+                            <div class="app-tab">
+                                <i class="fas fa-robot"></i>
+                                <span>Ai</span>
+                            </div>
+                            <div class="app-tab active">
+                                <i class="fas fa-heart"></i>
+                                <span>Health</span>
+                            </div>
+                            <div class="app-tab">
+                                <i class="fas fa-user"></i>
+                                <span>Profile</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="floating-elements">
+                <div class="floating-element"></div>
+                <div class="floating-element"></div>
+                <div class="floating-element"></div>
+                <div class="floating-element"></div>
+            </div>
+        </div>
+    </section>
+
+
+<!-- App Navigation Section -->
+<section class="app-navigation">
+    <div class="container">
+        <div class="nav-content">
+            <h2>Ready to Manage Your <span>Healthcare App</span>?</h2>
+            <p>Access your customized Smart Care solution or explore our app features.</p>
+            <div class="nav-buttons">
+                <a href="app.html" class="btn btn-primary">
+                    <i class="fas fa-rocket"></i> Go To Your App
+                </a>
+                <a href="about.html" class="btn btn-outline">
+                    <i class="fas fa-search"></i> Explore Features
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+    
+    <!-- About Section -->
+<section class="about" id="about">
+    <div class="container">
+        <div class="section-header">
+            <h2>Revolutionizing <span>Healthcare</span> Through Innovation</h2>
+            <p>SmartHealth combines cutting-edge technology with medical expertise to deliver personalized health solutions</p>
+        </div>
+        
+        <div class="about-content">
+            <div class="about-image">
+                <div class="health-animation">
+                    <div class="pulse-circle"></div>
+                    <div class="pulse-circle delay-1"></div>
+                    <div class="pulse-circle delay-2"></div>
+                    <img src="Assets/img/about.jpg" alt="Doctor using SmartHealth app">
+                </div>
+                <!-- <div class="floating-icons">
+                    <i class="fas fa-heartbeat"></i>
+                    <i class="fas fa-prescription-bottle-alt"></i>
+                    <i class="fas fa-chart-line"></i>
+                    <i class="fas fa-procedures"></i>
+                </div> -->
+            </div>
+            
+            <div class="about-text">
+                <div class="about-features">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3>AI-Powered Insights</h3>
+                        <p>Our advanced algorithms analyze your health data to provide personalized recommendations.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Secure & Private</h3>
+                        <p>HIPAA-compliant data protection ensures your health information remains confidential.</p>
+                    </div>
+                </div>
+                
+                <div class="about-details">
+                    <p>Founded in 2020 by a team of medical professionals and technologists, SmartHealth bridges the gap between patients and healthcare providers. Our mission is to make proactive healthcare accessible to everyone.</p>
+                    
+                    <ul class="health-list">
+                        <li><i class="fas fa-check-circle"></i> Real-time health monitoring</li>
+                        <li><i class="fas fa-check-circle"></i> Medication reminders</li>
+                        <li><i class="fas fa-check-circle"></i> Emergency alerts</li>
+                        <li><i class="fas fa-check-circle"></i> Doctor teleconsultation</li>
+                    </ul>
+                    
+                    <a href="#" class="btn btn-primary">
+                        <i class="fas fa-user-md" style="margin-right: 8px;"></i> Meet Our Team
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Features Section -->
+<section class="features" id="features">
+    <div class="container">
+        <div class="section-header">
+            <h2>Powerful <span>Features</span> for Your Health</h2>
+            <p>Discover how SmartHealth empowers you to take control of your wellness journey</p>
+        </div>
+        
+        <div class="features-grid">
+            <!-- Feature 1 -->
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-heartbeat"></i>
+                </div>
+                <h3>Real-Time Monitoring</h3>
+                <p>Continuous tracking of vital signs including heart rate, blood pressure, and oxygen levels with medical-grade accuracy.</p>
+                <div class="feature-badge">New</div>
+            </div>
+            
+            <!-- Feature 2 -->
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-pills"></i>
+                </div>
+                <h3>Medication Management</h3>
+                <p>Smart reminders and tracking for your medications with dosage instructions and refill alerts.</p>
+            </div>
+            
+            <!-- Feature 3 -->
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <h3>AI Health Coach</h3>
+                <p>Personalized recommendations based on your health data and lifestyle patterns.</p>
+                <div class="feature-badge">AI</div>
+            </div>
+            
+            <!-- Feature 4 -->
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-file-medical"></i>
+                </div>
+                <h3>Health Records</h3>
+                <p>Secure digital storage for all your medical reports, prescriptions, and test results.</p>
+            </div>
+            
+            <!-- Feature 5 -->
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-video"></i>
+                </div>
+                <h3>Telemedicine</h3>
+                <p>Connect with licensed healthcare providers through secure video consultations.</p>
+            </div>
+            
+            <!-- Feature 6 -->
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-bell"></i>
+                </div>
+                <h3>Emergency Alerts</h3>
+                <p>Automatic emergency notifications to your contacts if critical health issues are detected.</p>
+            </div>
+            
+            <!-- Hidden Features (would be on another page) -->
+            <div class="feature-card hidden-feature">
+                <div class="feature-icon">
+                    <i class="fas fa-dna"></i>
+                </div>
+                <h3>Genetic Insights</h3>
+                <p>Personalized health recommendations based on your genetic profile (coming soon).</p>
+            </div>
+            
+            <div class="feature-card hidden-feature">
+                <div class="feature-icon">
+                    <i class="fas fa-utensils"></i>
+                </div>
+                <h3>Nutrition Planner</h3>
+                <p>Custom meal plans tailored to your health conditions and dietary preferences.</p>
+            </div>
+            
+            <div class="feature-card hidden-feature">
+                <div class="feature-icon">
+                    <i class="fas fa-running"></i>
+                </div>
+                <h3>Fitness Programs</h3>
+                <p>Personalized exercise routines based on your fitness level and health status.</p>
+            </div>
+        </div>
+        
+        <div class="features-cta">
+            <a href="features.html" class="btn btn-secondary">
+                <i class="fas fa-plus-circle" style="margin-right: 8px;"></i> View All Features
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Pricing Section -->
+<section class="pricing" id="pricing">
+    <div class="container">
+        <div class="section-header">
+            <h2>Simple, Transparent <span>Pricing</span></h2>
+            <p>Choose the perfect plan for your healthcare needs. Fully customizable solutions available.</p>
+        </div>
+        
+        <div class="pricing-switch">
+            <div class="switch-container">
+                <span class="active">One-Time Payment</span>
+                <label class="switch">
+                    <input type="checkbox" id="pricing-toggle">
+                    <span class="slider round"></span>
+                </label>
+                <span>Monthly Payment</span>
+            </div>
+        </div>
+        
+        <div class="pricing-grid">
+            <!-- Basic Plan -->
+            <div class="pricing-card">
+                <div class="pricing-header">
+                    <h3>Basic</h3>
+                    <div class="price one-time">
+                        <span class="currency">₹</span>
+                        <span class="amount">18,000</span>
+                        <span class="period">one-time</span>
+                    </div>
+                    <div class="price monthly">
+                        <span class="currency">₹</span>
+                        <span class="amount">1,499</span>
+                        <span class="period">per month</span>
+                    </div>
+                    <p>Our entry-level customized solution</p>
+                </div>
+                <div class="pricing-features">
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> Basic customization</li>
+                        <li><i class="fas fa-check-circle"></i> NeuCare branding</li>
+                        <li><i class="fas fa-check-circle"></i> Core health features</li>
+                        <li><i class="fas fa-check-circle"></i> Email support</li>
+                        <li><i class="fas fa-check-circle"></i> 3 months free updates</li>
+                    </ul>
+                </div>
+                <div class="pricing-cta">
+                    <a href="#" class="btn btn-outline">Get Started</a>
+                </div>
+            </div>
+            
+            <!-- Premium Plan (Featured) -->
+            <div class="pricing-card featured">
+                <div class="featured-badge">Most Popular</div>
+                <div class="pricing-header">
+                    <h3>Premium</h3>
+                    <div class="price one-time">
+                        <span class="currency">₹</span>
+                        <span class="amount">44,999</span>
+                        <span class="period">one-time</span>
+                    </div>
+                    <div class="price monthly">
+                        <span class="currency">₹</span>
+                        <span class="amount">3,999</span>
+                        <span class="period">per month</span>
+                    </div>
+                    <p>Complete white-label solution</p>
+                </div>
+                <div class="pricing-features">
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> <strong>Fully your own app</strong></li>
+                        <li><i class="fas fa-check-circle"></i> Complete customization</li>
+                        <li><i class="fas fa-check-circle"></i> Your branding & logo</li>
+                        <li><i class="fas fa-check-circle"></i> All premium features</li>
+                        <li><i class="fas fa-check-circle"></i> Priority support</li>
+                        <li><i class="fas fa-check-circle"></i> 1 year free updates</li>
+                        <li><i class="fas fa-check-circle"></i> App store deployment</li>
+                    </ul>
+                </div>
+                <div class="pricing-cta">
+                    <a href="#" class="btn btn-primary">Get Premium</a>
+                </div>
+            </div>
+            
+            <!-- Enterprise Plan -->
+            <div class="pricing-card">
+                <div class="pricing-header">
+                    <h3>Enterprise</h3>
+                    <div class="price one-time">
+                        <span class="currency">₹</span>
+                        <span class="amount">Custom</span>
+                    </div>
+                    <div class="price monthly">
+                        <span class="currency">₹</span>
+                        <span class="amount">Custom</span>
+                    </div>
+                    <p>Tailored solutions for large organizations</p>
+                </div>
+                <div class="pricing-features">
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> All Premium features</li>
+                        <li><i class="fas fa-check-circle"></i> Multi-user management</li>
+                        <li><i class="fas fa-check-circle"></i> API integration</li>
+                        <li><i class="fas fa-check-circle"></i> Dedicated account manager</li>
+                        <li><i class="fas fa-check-circle"></i> Custom development</li>
+                        <li><i class="fas fa-check-circle"></i> 24/7 support</li>
+                    </ul>
+                </div>
+                <div class="pricing-cta">
+                    <a href="#" class="btn btn-outline">Contact Sales</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="pricing-footer">
+            <p>All plans include a 14-day money-back guarantee. Need something different? <a href="#contact">Contact us</a> for custom solutions.</p>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Success Stories Section -->
+<section class="success-stories" id="success-stories">
+    <div class="container">
+        <div class="section-header">
+            <h2>Our <span>Success Stories</span></h2>
+            <p>See how healthcare providers are transforming their practices with NeuCare App solutions.</p>
+        </div>
+        
+        <div class="stories-grid">
+            <!-- Video 1 -->
+            <div class="story-card">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID_1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="story-content">
+                    <h3>Dr. Sharma's Clinic Transformation</h3>
+                    <p class="story-meta">From 50 to 200+ patients/month</p>
+                    <p class="story-excerpt">"Within 3 months of using NeuCare, we doubled our patient base and reduced administrative work by 60%. The customizable features allowed us to create the perfect workflow for our clinic."</p>
+                    <div class="story-cta">
+                        <a href="#" class="btn btn-outline">Watch Full Story</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Video 2 -->
+            <div class="story-card">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID_2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="story-content">
+                    <h3>City Hospital's Digital Leap</h3>
+                    <p class="story-meta">150+ doctors onboarded</p>
+                    <p class="story-excerpt">"Our white-label solution helped City Hospital launch their own branded app in just 2 weeks. Patient satisfaction scores increased by 40% and no-show rates dropped dramatically."</p>
+                    <div class="story-cta">
+                        <a href="#" class="btn btn-outline">Watch Full Story</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Image Story -->
+            <div class="story-card">
+                <div class="image-container">
+                    <img src="Assets/img/about.jpg" alt="NeuCare App in use at clinic">
+                    <!-- <div class="play-button">
+                        <i class="fas fa-play"></i>
+                    </div> -->
+                </div>
+                <div class="story-content">
+                    <h3>How We Built NeuCare</h3>
+                    <p class="story-meta">From idea to 1000+ installations</p>
+                    <p class="story-excerpt">"After years of frustration with existing healthcare software, our team of doctors and developers came together to create NeuCare. See our journey from a small clinic solution to serving hospitals nationwide."</p>
+                    <div class="story-cta">
+                        <a href="#" class="btn btn-primary">Read Our Story</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="stories-footer">
+            <p>Ready to create your own success story? <a href="#pricing">Choose your plan</a> or <a href="#contact">contact our team</a> for a personalized demo.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Footer Section -->
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <h3>NeuCare</h3>
+                <p>Transforming healthcare through innovative technology solutions.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#success-stories">Success Stories</a></li>
+                    <li><a href="applist.html">Your App</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Our Team</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> 123 Health Street, MedCity, IN 560001</li>
+                    <li><i class="fas fa-phone-alt"></i> +91 98765 43210</li>
+                    <li><i class="fas fa-envelope"></i> support@neucare.com</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="copyright">
+                &copy; 2023 NeuCare. All rights reserved.
+            </div>
+            <div class="legal-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Cookie Policy</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+    <script>
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            navbar.classList.toggle('scrolled', window.scrollY > 50);
+        });
+        
+        // Mobile menu toggle
+        const toggleBtn = document.querySelector('.toggle-btn');
+        const navLinks = document.querySelector('.nav-links');
+        
+        toggleBtn.addEventListener('click', function() {
+            navLinks.classList.toggle('active');
+        });
+        
+        // Close mobile menu when clicking a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', function() {
+                navLinks.classList.remove('active');
+            });
+        });
+        
+        // Animation for hero elements
+        document.addEventListener('DOMContentLoaded', function() {
+            const heroContent = document.querySelector('.hero-content');
+            const heroImage = document.querySelector('.hero-image');
+            
+            setTimeout(() => {
+                heroContent.style.opacity = '1';
+                heroContent.style.transform = 'translateY(0)';
+            }, 300);
+            
+            setTimeout(() => {
+                heroImage.style.opacity = '1';
+                heroImage.style.transform = 'translateY(0)';
+            }, 600);
+        });
+    </script>
+
+    <script>
+    // Animation for about section when scrolled into view
+    document.addEventListener('DOMContentLoaded', function() {
+        const aboutSection = document.querySelector('.about');
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    aboutSection.querySelector('.about-image').style.opacity = '1';
+                    aboutSection.querySelector('.about-image').style.transform = 'translateY(0)';
+                    aboutSection.querySelector('.about-text').style.opacity = '1';
+                    aboutSection.querySelector('.about-text').style.transform = 'translateY(0)';
+                }
+            });
+        }, { threshold: 0.1 });
+        
+        observer.observe(aboutSection);
+    });
+</script>
+
+
+<script>
+    // Animation for feature cards when scrolled into view
+    document.addEventListener('DOMContentLoaded', function() {
+        const featuresSection = document.querySelector('.features');
+        const featureCards = document.querySelectorAll('.feature-card:not(.hidden-feature)');
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry, index) => {
+                if (entry.isIntersecting) {
+                    setTimeout(() => {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }, index * 100);
+                }
+            });
+        }, { threshold: 0.1 });
+        
+        featureCards.forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(20px)';
+            card.style.transition = 'all 0.5s ease';
+            observer.observe(card);
+        });
+    });
+</script>
+
+
+<script>
+    // Pricing toggle functionality
+    document.addEventListener('DOMContentLoaded', function() {
+        const pricingToggle = document.getElementById('pricing-toggle');
+        const oneTimePrices = document.querySelectorAll('.price.one-time');
+        const monthlyPrices = document.querySelectorAll('.price.monthly');
+        const oneTimeLabel = document.querySelector('.switch-container span:first-child');
+        const monthlyLabel = document.querySelector('.switch-container span:last-child');
+        
+        pricingToggle.addEventListener('change', function() {
+            if (this.checked) {
+                // Show monthly prices
+                oneTimePrices.forEach(price => price.style.display = 'none');
+                monthlyPrices.forEach(price => price.style.display = 'block');
+                oneTimeLabel.classList.remove('active');
+                monthlyLabel.classList.add('active');
+            } else {
+                // Show one-time prices
+                oneTimePrices.forEach(price => price.style.display = 'block');
+                monthlyPrices.forEach(price => price.style.display = 'none');
+                monthlyLabel.classList.remove('active');
+                oneTimeLabel.classList.add('active');
+            }
+        });
+        
+        // Animation for pricing cards when scrolled into view
+        const pricingSection = document.querySelector('.pricing');
+        const pricingCards = document.querySelectorAll('.pricing-card');
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry, index) => {
+                if (entry.isIntersecting) {
+                    setTimeout(() => {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }, index * 150);
+                }
+            });
+        }, { threshold: 0.1 });
+        
+        pricingCards.forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(30px)';
+            card.style.transition = 'all 0.5s ease';
+            observer.observe(card);
+        });
+    });
+</script>
+
+<script>
+    // Animation for story cards when scrolled into view
+    document.addEventListener('DOMContentLoaded', function() {
+        const storyCards = document.querySelectorAll('.story-card');
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry, index) => {
+                if (entry.isIntersecting) {
+                    setTimeout(() => {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }, index * 150);
+                }
+            });
+        }, { threshold: 0.1 });
+        
+        storyCards.forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(30px)';
+            card.style.transition = 'all 0.5s ease';
+            observer.observe(card);
+        });
+        
+        // Play button functionality for image cards
+        document.querySelectorAll('.play-button').forEach(button => {
+            button.addEventListener('click', function() {
+                const card = this.closest('.story-card');
+                // Replace image with video
+                const imageContainer = card.querySelector('.image-container');
+                imageContainer.innerHTML = `
+                    <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID_3" frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen></iframe>
+                `;
+            });
+        });
+    });
+</script>
+
+
+<script>
+    // Animation for the section
+    document.addEventListener('DOMContentLoaded', function() {
+        const appNavSection = document.querySelector('.app-navigation');
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, { threshold: 0.1 });
+        
+        appNavSection.style.opacity = '0';
+        appNavSection.style.transform = 'translateY(20px)';
+        appNavSection.style.transition = 'all 0.5s ease';
+        observer.observe(appNavSection);
+    });
+</script>
+
 </body>
 </html>
